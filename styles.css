@@ -1,77 +1,113 @@
-body{
-    background: linear-gradient(to right, rgb(51, 230, 237), rgb(12, 26, 135), rgb(16, 131, 115));
-    background-image: url(azu.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-h1{
-    background-color: whitesmoke;
-    opacity: 0.5;
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
+
+/* 1. SELECTOR UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.barra-nav{
-    width: 100%;
-    height: 7vh;
-    background-color: rgb(29, 26, 25);
+/* 2. SELECTOR DE ETIQUETA */
+body {
+    font-family: Arial, sans-serif;
 }
-ul{
+
+/* HEADER */
+#encabezado { /* 3. SELECTOR ID */
+    background: rgb(0, 0, 0);
+    color: white;
     display: flex;
-    width: 90%;
     justify-content: space-between;
-
+    padding: 20px 35px;
 }
 
-li{
-    font-size: 32px;
-    list-style: none;
+/* 4. SELECTOR DE CLASE */
+.titulo {
+    font-size: 30px;
+    text-align: center;
 }
-ul li a{
-    color: rgb(11, 10, 10);
+
+/* enlaces */
+nav a {
+    color: white;
+    margin-left: 15px;
     text-decoration: none;
 }
 
-li a:hover{
-    background-color: rgb(52, 167, 220);
-    padding: 5px;
-    border-radius: 30%;
+/* 5. PSEUDOCLASE */
+nav a:hover {
+    color: yellow;
 }
 
-.busqueda{
-    display: flex;
-    width: 10%;
-    background-color: rgb(254, 254, 254);
-    height: 3vh;
-    border-radius: 25px;
+/* PORTADA con imagen de fondo */
+.portada {
+    background-image: url("japan.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 200px 40px;
 }
 
-input{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    outline: none;
+/* botón */
+.btn {
+    padding: 10px 20px;
     border: none;
-    background-color: transparent;
+    background: orange;
+    cursor: pointer;
 }
 
-h2 {
+/* pseudoclase */
+.btn:hover {
+    background: red;
+}
+
+/* GALERÍA */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.imagenes img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* 6. SELECTOR DE ATRIBUTO */
+input[type="text"] {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    margin: 20px;
+}
+
+/* 7. PSEUDOELEMENTO */
+.descripcion::first-letter {
+    font-size: 50px;
+    color: yellow;
+}
+
+/* FOOTER */
+footer {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
+    text-align: center;
+    padding: 10px;
+}
+h1 {
+    font-size: 200%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+li{
+    text-align: center;
+    font-size: 200%; 
+    color: rgb(0, 0, 0);
+}
+
+h2{
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 15px;
-}
-
-h3 {
-color: white;
-text-align: center;
-font-size: 25px;
-}
-
-h3{
-    color: white;
-text-align: center;
-font-size: 25px;
 }
