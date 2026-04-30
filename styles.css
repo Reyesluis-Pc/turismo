@@ -1,0 +1,77 @@
+body{
+    background: linear-gradient(to right, rgb(51, 230, 237), rgb(12, 26, 135), rgb(16, 131, 115));
+    background-image: url(azu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    background-color: whitesmoke;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.barra-nav{
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(29, 26, 25);
+}
+ul{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+
+}
+
+li{
+    font-size: 32px;
+    list-style: none;
+}
+ul li a{
+    color: rgb(11, 10, 10);
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgb(52, 167, 220);
+    padding: 5px;
+    border-radius: 30%;
+}
+
+.busqueda{
+    display: flex;
+    width: 10%;
+    background-color: rgb(254, 254, 254);
+    height: 3vh;
+    border-radius: 25px;
+}
+
+input{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15px;
+}
+
+h3 {
+color: white;
+text-align: center;
+font-size: 25px;
+}
+
+h3{
+    color: white;
+text-align: center;
+font-size: 25px;
+}
