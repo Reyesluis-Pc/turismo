@@ -1,113 +1,106 @@
-
-/* 1. SELECTOR UNIVERSAL */
+/* SELECTOR UNIVERSAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. SELECTOR DE ETIQUETA */
+/* BODY */
 body {
+    background-color: rgb(236, 255, 254);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
     font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-#encabezado { /* 3. SELECTOR ID */
-    background: rgb(0, 0, 0);
+/* ENCABEZADO */
+#encabezado {
+    background: black;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 20px 35px;
+    align-items: center;
+    padding: 15px 30px;
 }
 
-/* 4. SELECTOR DE CLASE */
+/* TITULO */
 .titulo {
     font-size: 30px;
-    text-align: center;
+    color: white;
 }
 
-/* enlaces */
+/* BOTONES */
 nav a {
     color: white;
-    margin-left: 15px;
+    margin-left: 20px;
     text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
-/* 5. PSEUDOCLASE */
+/* HOVER */
 nav a:hover {
-    color: yellow;
+    color: rgb(255, 0, 187);
 }
 
-/* PORTADA con imagen de fondo */
+/* PORTADA */
 .portada {
     background-image: url("japan.jpg");
     background-size: cover;
     background-position: center;
-    color: white;
-    text-align: center;
     padding: 200px 40px;
 }
 
-/* botón */
-.btn {
-    padding: 10px 20px;
-    border: none;
-    background: orange;
-    cursor: pointer;
+/* GALERIA */
+.galeria {
+    padding: 40px;
 }
 
-/* pseudoclase */
-.btn:hover {
-    background: red;
+/* H2 MEJORADO */
+.galeria h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    position: relative;
 }
 
-/* GALERÍA */
-.imagenes {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 50px;
-}
-
-.imagenes img {
-    width: 400px;
+/* LINEA DECORATIVA */
+.galeria h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: rgb(255, 0, 187);
+    display: block;
+    margin: 10px auto 0;
     border-radius: 10px;
 }
 
-/* 6. SELECTOR DE ATRIBUTO */
-input[type="text"] {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 5px;
-    margin: 20px;
+/* LISTA */
+ul {
+    list-style: none;
+    margin-bottom: 20px;
 }
 
-/* 7. PSEUDOELEMENTO */
-.descripcion::first-letter {
-    font-size: 50px;
-    color: yellow;
+li {
+    margin: 10px 0;
 }
 
-/* FOOTER */
-footer {
-    background: rgb(0, 0, 0);
-    color: rgb(255, 251, 251);
-    text-align: center;
-    padding: 10px;
+/* IMAGENES */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
+.imagenes img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* ARREGLAR H1 */
 h1 {
-    font-size: 200%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    
-}
-
-li{
-    text-align: center;
-    font-size: 200%; 
-    color: rgb(0, 0, 0);
-}
-
-h2{
-    color: rgb(0, 0, 0);
-    text-align: center;
+    margin: 0;
 }
