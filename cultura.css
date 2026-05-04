@@ -1,9 +1,38 @@
+/* SELECTOR DE ETIQUETA */
+body {
+    background-color: rgb(236, 255, 254);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.encabezado{
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* TITULO DEL ENCABEZADO */
+.titulo {
+    font-size: 30px;
+    color: rgb(4, 4, 4);
+}
+nav a {
+    color: rgb(11, 11, 11);
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
 .contenedor{
     display: flex;
     align-items: center;
     gap: 20px;
 
-    margin: 30px auto; /* 🔥 esto los pone uno debajo del otro y centrados */
+    margin: 30px auto;
     
     border: 1px solid #ccc;
     padding: 15px;
@@ -15,7 +44,7 @@
     transition: transform 0.3s;
 }
 
-/* EFECTO HOVER (opcional pero se ve pro) */
+
 .contenedor:hover{
     transform: scale(1.03);
 }
@@ -23,12 +52,12 @@
 .imagen{
     width: 200px;
     height: auto;
-    border-radius: 10px; /* 🔥 corregí esto (tenías una S de más) */
+    border-radius: 10px;
 }
 
 .texto{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left; /* 🔥 para que el texto se vea mejor */
+    text-align: left;
 }
 
 .texto h2{
